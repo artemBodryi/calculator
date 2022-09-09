@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calc</title>
+</head>
+
+<body>
+    <div class="calc border">
+        <div class="screen border">
+            <input type="text" class="count" readonly ></input>
+            <input type="text" class="result" readonly placeholder="0"></input>
+        </div>
+        <div class="buttons">
+            <div class="flex-operations">
+                <button class="btn green margin-l margin-r margin-b" onclick="input('/')">÷</button>
+                <button class="btn green margin-r margin-b" onclick="input('*')">x</button>
+                <button class="plus btn green margin-r margin-b" onclick="input('+')">+</button>
+                <button class="btn green margin-r margin-b" onclick="input('-')">-</button>
+            </div>
+
+            <div class="container">
+                <div class="flex-numbers">
+                    <button class="btn silver margin-l margin-r margin-b" onclick="input('7')">7</button>
+                    <button class="btn silver margin-r margin-b" onclick="input('8')">8</button>
+                    <button class="btn silver margin-r margin-b" onclick="input('9')">9</button>
+
+                    <button class="btn silver margin-l margin-r margin-b" onclick="input('4')">4</button>
+                    <button class="btn silver margin-r margin-b" onclick="input('5')">5</button>
+                    <button class="btn silver margin-r margin-b" onclick="input('6')">6</button>
+
+                    <button class="btn silver margin-l margin-r margin-b" onclick="input('1')">1</button>
+                    <button class="btn silver margin-r margin-b" onclick="input('2')">2</button>
+                    <button class="btn silver margin-r margin-b" onclick="input('3')">3</button>
+
+                    <button class="btn silver margin-l margin-r margin-b margin-b-large" onclick="input('0')">0</button>
+                    <button class="point btn silver margin-r margin-b margin-b-large" onclick="input('.')">,</button>
+                    <button class="clear btn silver margin-r margin-b margin-b-large" onclick="reset()">C</button>
+                </div>
+                
+                <div class="flex-equal">
+                    <button class="equal yellow btn" onclick="result()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/calculator.js"></script>
+</body>
+</html>
